@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <h2>Loan Calculator</h2>
+    <form action="LoanServlet" method="post">
+        <label for="loanAmount">Loan Amount:</label>
+        <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+
+        <label for="interestRate">Interest Rate (Annual %):</label>
+        <input type="number" id="interestRate" name="interestRate" step="0.01" required><br><br>
+
+        <label for="numberOfYears">Number of Years:</label>
+        <input type="number" id="numberOfYears" name="numberOfYears" required><br><br>
+
+        <input type="submit" value="Compute Loan Payment">
+    </form>
+</body>
+</html>
